@@ -1,0 +1,156 @@
+.scoreboard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard-no-data {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard-no-data h3 {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+}
+
+.scoreboard-section {
+  margin-bottom: 32px;
+}
+
+.scoreboard-title {
+  color: #1976d2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 8px;
+}
+
+.scoreboard-table {
+  overflow-x: auto;
+}
+
+.scoreboard-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  background: #1976d2;
+}
+
+.table-header th {
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-row {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+}
+
+.table-row td {
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.player-name {
+  min-width: 150px;
+}
+
+.player-name strong {
+  display: block;
+  color: #333;
+  font-size: 14px;
+}
+
+.player-role {
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.runs, .wickets {
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 16px;
+}
+
+.balls, .fours, .sixes, .overs, .maidens {
+  color: #333;
+  font-size: 14px;
+}
+
+.strike-rate, .economy {
+  color: #666;
+  font-size: 13px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.not-out {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.status-badge.bowled, .status-badge.caught, .status-badge.lbw {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status-badge.run-out {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.role {
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .scoreboard {
+    padding: 16px;
+  }
+  
+  .scoreboard-title {
+    font-size: 20px;
+  }
+  
+  .table-header th,
+  .table-row td {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .player-name strong {
+    font-size: 12px;
+  }
+  
+  .player-role {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,177 @@
+/* App Styles */
+
+/* App container */
+.app {
+  transition: all 0.3s ease;
+}
+
+/* 📱 Mobile View */
+.app.mobile {
+  width: 375px;
+  margin: 20px auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+}
+
+/* 🖥️ Desktop View */
+.app.desktop {
+  width: 100%;
+}
+
+/* Toggle buttons */
+.view-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.view-toggle button {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: #1976d2;
+  color: white;
+}
+
+.view-toggle button:hover {
+  background: #1565c0;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  min-height: calc(100vh - 120px); /* Account for header and navbar */
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f7fa;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+    min-height: calc(100vh - 140px);
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+    min-height: calc(100vh - 150px);
+  }
+}
+
+/* Loading States */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-content {
+  text-align: center;
+  color: #1976d2;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Error States */
+.error-boundary {
+  padding: 20px;
+  background: #ffebee;
+  border: 1px solid #f44336;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+  color: #c62828;
+}
+
+/* Success States */
+.success-message {
+  padding: 15px 20px;
+  background: #e8f5e8;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}

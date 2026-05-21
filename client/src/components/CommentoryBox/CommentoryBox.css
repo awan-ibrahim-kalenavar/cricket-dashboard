@@ -1,0 +1,47 @@
+.commentary-box {
+  margin-top: 15px;
+  background: #0f172a;
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.commentary-header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 5px;
+}
+
+.commentary-header h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #38bdf8;
+}
+
+.commentary-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.commentary-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.commentary-time {
+  color: #94a3b8;
+  min-width: 70px;
+}
+
+.commentary-text {
+  color: #e2e8f0;
+}
+
+.no-commentary {
+  color: #94a3b8;
+  text-align: center;
+}

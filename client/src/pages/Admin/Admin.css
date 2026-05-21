@@ -1,0 +1,165 @@
+.admin-container {
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: background 0.3s ease;
+  color: #333333;
+}
+
+/* Dark Mode Styles */
+body.dark .admin-container {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .dashboard {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.dashboard h3 {
+  color: #333333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+body.dark .dashboard h3 {
+  color: #ffffff;
+}
+
+.input {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #f8f9fa;
+  color: #64748b;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 8px 16px 8px 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+body.dark .input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  margin: 3px;
+  padding: 8px 12px;
+  background: rgb(113, 113, 241);
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: rgb(90, 90, 220);
+}
+
+body.dark button {
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  border-color: #38bdf8;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.3);
+}
+
+body.dark button:hover {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
+}
+
+.card{
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f8f9fa;
+  width: 50%;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+body.dark .card p {
+  color: #ffffff;
+}
+
+.heading{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(113, 113, 241);
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+body.dark .heading {
+  color: #38bdf8;
+}
+
+.dashboard div {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .dashboard div {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.add-match input {
+  margin: 5px;
+  padding: 8px;
+}
+
+.match-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .match-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+/* Main container fix */
+div {
+  box-sizing: border-box;
+}

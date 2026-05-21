@@ -1,0 +1,164 @@
+.search-page {
+  padding: 30px;
+  background: #f5f7fa;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #333333;
+}
+
+
+body.dark .search-page {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+body.dark .search-title {
+  color: #ffffff;
+}
+
+body.dark .search-query {
+  color: #94a3b8;
+}
+
+body.dark h2 {
+  color: #ffffff;
+}
+
+body.dark .match-card {
+  background: #1e293b;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark .match-header {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark .match-type {
+  color: #94a3b8;
+}
+
+body.dark .team-info span {
+  color: #ffffff;
+}
+
+body.dark .score {
+  color: #38bdf8;
+}
+
+body.dark .no-data {
+  color: #94a3b8;
+}
+
+.search-page h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.search-page h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+
+.match-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.match-card {
+  width: 300px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.match-header span {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.match-type {
+  background: #333;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+
+.team-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-info img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+.score {
+  font-size: 14px;
+}
+
+.score strong {
+  font-size: 16px;
+  color: #fff;
+}
+
+
+.status {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.status.live {
+  color: #ff3b3b;
+}
+
+
+.status.completed {
+  color: #4caf50;
+}
+
+
+.status.upcoming {
+  color: #ffc107;
+}
+
+
+.no-data {
+  color: #aaa;
+  font-size: 14px;
+}
